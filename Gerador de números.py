@@ -10,8 +10,7 @@ from tkinter import *
                     
 def gerar():
     file = open("numeros_gerados.txt",'w')#abre um arquivo .txt
-    
-    ddi =int(entrada_ddi.get())
+    ddi = int(entrada_ddi.get())
     ddd = int(entrada_ddd.get())
     quantidade = int(entrada_quantidade.get())
     numeros_gerados=[]
@@ -26,7 +25,7 @@ def gerar():
         p=random.randint(0,quantidade-1)#pega o resultado de um indice aleatório da lista
         s=random.randint(0,quantidade-1)
         #print('+{} {} 9{}-{}'.format(ddi, ddd, numeros_gerados[p], numeros_gerados[s]))#imprime no console
-        file.write('+{} {} 9{}-{}\n'.format(ddi, ddd, numeros_gerados[p], numeros_gerados[s]))#escreve o resultado no .txt
+        file.write('+{} {} 9{}-{}\n'.format(ddi, ddd, numeros_gerados[p], numeros_gerados[s]))#escreve o resultado no .txt | escreve no formato +00 00 90000-0000
         
     file.close()#fecha o arquivo .txt
 
